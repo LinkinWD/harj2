@@ -11,6 +11,11 @@ app.get('/', (req, res) => {
     res.render('home')
 })
 
+app.get('/r/:kysely', (req, res) => {
+    const { kysely } = req.params;
+    res.render('kysely',  { kysely })
+})
+
 app.get('/some', (req, res) => {
     //tehdään muutuja ja siirretään se sivulle toisena muuttujana
     const numero = Math.floor(Math.random() *10 ) +1;
