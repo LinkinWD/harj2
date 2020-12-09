@@ -1,0 +1,35 @@
+{
+    "vene": {
+        "nimi": "veneily",
+        "kuvaus": "Sellaista veneellä menoa",
+        "harrastajia": 5000,
+        
+        "posts": [
+            {
+            "otsikko": "Tälläistä pelleilyä",
+            "kirjoittaja": "Ville Vallaton" 
+            },
+            {
+                "otsikko": "ihan koolia",
+                "kirjoittaja": "Joku Tossavainen"
+            }
+        ]
+    },
+"auto": {
+    "nimi": "Autoilu",
+    "kuvaus": "sellasta kestävää kehitystä",
+    "harrastajia": 4000,
+    
+    "posts": [
+        {
+            "otsikko": "tää auto",
+            "kirjoittaja": "Pee läpi",
+            "kuva": "https://im.mtv.fi/image/6454282/landscape16_9/1024/576/7eb0337358b278322abbeefdd0ffd21f/Ut/kuvausauto.jpg"        },
+        {
+            "otsikko": "ei kun tää",
+            "kirjoittaja": "toisinajattelija",
+            "kuva": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Jurvetson_Google_driverless_car_trimmed.jpg"
+        }
+    ]
+}
+}

@@ -1,6 +1,7 @@
 const express = require('express')
 const path = require('path')
 const app = express()
+const omaData = require('./data.json')
 
 //view engine, että voi käyttää embedded javascriptiä
 app.set('view engine', 'ejs')
@@ -13,7 +14,12 @@ app.get('/', (req, res) => {
 
 app.get('/r/:kysely', (req, res) => {
     const { kysely } = req.params;
-    res.render('kysely',  { kysely })
+    const data = omaData[kysely];
+    if(data) {
+    res.render('kysely',  { ...data });
+    } else {
+        res.render('eiLoytynyt', {kysely})
+    }
 })
 
 app.get('/vieraat', (req, res) => {
