@@ -7,5 +7,11 @@
 </head>
 <body>
     <h1>Tottoooroo, satunnais numerosi on: <%= satunnainen %></h1>
+    <% if(satunnainen % 2 === 0) { %>
+        <h2>Toi oli vielä jota tasa luku</h2>
+    <% } else { %>
+        <h2>Toi oli pariton luku</h2>
+    <% } %>
+    <h3><%= satunnainen%2 === 0 ? 'tasan' : 'pariton' %></h3>
 </body>
 </html>

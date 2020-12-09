@@ -16,6 +16,13 @@ app.get('/r/:kysely', (req, res) => {
     res.render('kysely',  { kysely })
 })
 
+app.get('/vieraat', (req, res) => {
+    const vieraat = [
+        'Mikko', 'Jaakko', 'Pekka', 'Joonas', 'Vilpertti'
+    ]
+    res.render('vieraat', { vieraat })
+})
+
 app.get('/some', (req, res) => {
     //tehdään muutuja ja siirretään se sivulle toisena muuttujana
     const numero = Math.floor(Math.random() *10 ) +1;
