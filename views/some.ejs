@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<%- include('partials/head') %>
+
     <h1>Tottoooroo, satunnais numerosi on: <%= satunnainen %></h1>
     <% if(satunnainen % 2 === 0) { %>
         <h2>Toi oli vielä jota tasa luku</h2>
@@ -13,5 +7,4 @@
         <h2>Toi oli pariton luku</h2>
     <% } %>
     <h3><%= satunnainen%2 === 0 ? 'tasan' : 'pariton' %></h3>
-</body>
-</html>
+    <%- include(partials/footer) %>

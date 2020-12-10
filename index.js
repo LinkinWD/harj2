@@ -3,6 +3,8 @@ const path = require('path')
 const app = express()
 const omaData = require('./data.json')
 
+app.use(express.static(path.join(__dirname, '/public')))
+
 //view engine, että voi käyttää embedded javascriptiä
 app.set('view engine', 'ejs')
 //mahdollistaa käytöin muistakin directoreista, että löytää views kansion

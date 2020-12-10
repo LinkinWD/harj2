@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= nimi %></title>
-</head>
-<body>
+
+<%- include('partials/head') %>
+
     <% console.log(posts) %>
     <h1>Olen surffailemassa <%= nimi %> sivulla</h1>
     <h3> <%= kuvaus %> </h3>
@@ -14,8 +9,8 @@
     <% for(let post of posts) { %>
         <h5> <%= post.otsikko %> - <b> <%= post.kirjoittaja %> </b>  </h5>
         <% if(post.kuva) { %>
-            <img src="<%= post.kuva %> " alt="">
+            <img src="<%= post.kuva %> " width="600px" alt="">
         <% } %>
     <% } %>
-</body>
-</html>
+  </div>
+  <%- include(partials/footer) %>
